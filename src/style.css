@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30vw 0px 10px;
+}
+img {
+    width: 40px;
+    height: 40px;
+}
+footer {
+    text-align: center
+}
+.myicon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.reactlogo {
+    width: 120px;
+    height: 120px;
+} */
