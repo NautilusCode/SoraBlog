@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="..\splide-4.1.3\dist\js\splide.min.js"></script>
+    <link rel="stylesheet" href="..\splide-4.1.3\dist\css\splide.min.css" />
   </head>
   <body>
     <header class="bg-slate-800 h-20 w-full p-0 pr-20 items-center flex">
@@ -24,27 +26,44 @@
       </div>
     </header>
     <main>
-      <div class="relative mb-12">
-        <img src="image\Hero.png" alt="Hero" class="w-full" />
-        <h1
-          class="text-8xl absolute bottom-[20vw] left-auto right-12 font-nsjp font-semibold"
-        >
-          ピクセル<span class="text-7xl">に</span>魂<span class="text-7xl"
-            >を、</span
-          ><br />行<span class="text-7xl">に</span>心<span class="text-7xl"
-            >を。</span
-          >
-        </h1>
-        <h2
-          class="text-3xl absolute bottom-[16vw] left-auto right-24 font-nsjp font-semibold"
-        >
-          Soul in every pixel, heart in every line.
-        </h2>
-        <h2
-          class="text-2xl absolute bottom-[12vw] left-auto right-24 font-nsjp font-semibold"
-        >
-          -GPT-4oに作ってもらった座右の銘(なんだこれ)
-        </h2>
+      <div class="splide mb-14" aria-label="Splideの基本的なHTML">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <div class="relative mb-12 splide__slide">
+              <img src="image\Hero.png" alt="Hero" class="w-[60%] h-full object-cover" />
+              <h1
+                class="text-8xl absolute bottom-[15vw] left-auto right-24 font-nsjp font-semibold"
+              >
+                ピクセル<span class="text-7xl">に</span>魂<span class="text-7xl"
+                  >を、</span
+                ><br />行<span class="text-7xl">に</span>心<span
+                  class="text-7xl"
+                  >を。</span
+                >
+              </h1>
+              <h2
+                class="text-3xl absolute bottom-[12vw] left-auto right-36 font-nsjp font-semibold"
+              >
+                Soul in every pixel, heart in every line.
+              </h2>
+              <h2
+                class="text-2xl absolute bottom-[7vw] left-auto right-36 font-nsjp font-semibold"
+              >
+                -GPT-4oに作ってもらった座右の銘(なんだこれ)
+              </h2>
+            </div>
+            <img
+              src="image\Hero2.png"
+              alt="Hero"
+              class="w-[60%] h-full object-cover splide__slide"
+            />
+            <img
+              src="image\Hero3.png"
+              alt="Hero"
+              class="w-[60%] h-full object-cover splide__slide"
+            />
+          </ul>
+        </div>
       </div>
       <div class="mr-64 ml-64">
         <div class="text-left">
@@ -84,8 +103,14 @@
               <div
                 class="flex h-fit w-fit items-center border-[#f6511d] p-8 text-right mr-auto ml-0"
               >
-                <div class="bg-slate-300 h-56 w-80">
-                  <p class="text-center">comingsoon...</p>
+                <div class="h-56 w-80">
+                  <video
+                    src="image\PiedPiperMV完成.mp4"
+                    class="h-full w-full"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
                 </div>
 
                 <div class="ml-10">
@@ -103,13 +128,22 @@
               <div
                 class="flex h-fit w-fit items-center border-[#f6511d] p-8 text-right mr-0 ml-auto"
               >
-                <div class="bg-slate-300 h-56 w-80">
-                  <p class="text-center">comingsoon...</p>
+                <div class="h-56 w-80">
+                  <video
+                    src="image\2024-05-27 12-07-01.mp4"
+                    class="h-full w-full"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
                 </div>
 
                 <div class="ml-10">
                   <p class="text-xl font-nsjp">
-                    スーパー巻き寿司職人<br />制限時間内に多くの巻き寿司を作るゲーム<br />1年次の授業でM氏と共同で開発<br />学部で優秀賞を獲得<br />GithubPagesでデプロイ
+                    スーパー巻き寿司職人<br />制限時間内に多くの巻き寿司を作るゲーム<br />1年次の授業でM氏と共同で開発<br />学部で優秀賞を獲得<br />GithubPagesでデプロイ<br /><a
+                      href="https://nautiluscode.github.io/MakizushiMaster/"
+                      >https://nautiluscode.github.io/MakizushiMaster/</a
+                    >
                   </p>
                 </div>
               </div>
@@ -131,7 +165,8 @@
                   class="h-12 w-12"
                 />
                 <li class="ml-10 text-2xl font-nsjp font-medium">
-                  Mail：xzhouzhi@gmail.com
+                  Mail：
+                  <span class="text-xl"> xzhouzhi@gmail.com </span>
                 </li>
               </div>
               <div class="flex items-center mb-4">
@@ -151,6 +186,7 @@
                 <li class="ml-10 text-2xl font-nsjp font-medium">
                   BlueSky：<a
                     href="https://bsky.app/profile/sora339.bsky.social"
+                    class="text-xl"
                     >@sora339.bsky.social</a
                   >
                 </li>
@@ -162,7 +198,9 @@
                   class="h-12 w-12"
                 />
                 <li class="ml-10 text-2xl font-nsjp font-medium">
-                  Instagram：：<a href="https://www.instagram.com/sorachi_339"
+                  Instagram：<a
+                    href="https://www.instagram.com/sorachi_339"
+                    class="text-xl"
                     >sorachi_339</a
                   >
                 </li>
@@ -176,6 +214,7 @@
                 <li class="ml-10 text-2xl font-nsjp font-medium">
                   discode：<a
                     href="https://discord.com/users/692989109521612841"
+                    class="text-xl"
                     >sora_339</a
                   >
                 </li>
@@ -187,7 +226,9 @@
                   class="h-12 w-12"
                 />
                 <li class="ml-10 text-2xl font-nsjp font-medium">
-                  Github：<a href="https://github.com/NautilusCode"
+                  Github：<a
+                    href="https://github.com/NautilusCode"
+                    class="text-xl"
                     >NautilusCode</a
                   >
                 </li>
@@ -205,13 +246,13 @@
             class="h-fit w-full items-center border-[#f6511d] p-8 text-right ml-0"
           >
             <div class="text-left">
-              <h3 class="text-2xl font-nsjp font-medium">
-                普段の仕事紹介
-              </h3>
+              <h3 class="text-2xl font-nsjp font-medium">普段の仕事紹介</h3>
               <p class="text-base font-nsjp font-normal mb-2">2024/5/18</p>
             </div>
             <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
-              <!-- <img src="image\tailwindcss-icon.svg" alt="React_logo" /> -->
+              <div class="bg-white p-2 w-[255px]">
+                <!-- <img src="image\tailwindcss.svg" alt="Tailwind_logo" class="h-full"/> -->
+              </div>
               <div class="ml-auto">commingsoon...</div>
             </div>
             <div class="text-left">
@@ -219,8 +260,19 @@
               <p class="text-base font-nsjp font-normal mb-2">2024/4/22</p>
             </div>
             <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
-              <img src="image/react.svg" alt="React_logo" />
-              <div class="ml-auto">commingsoon...</div>
+              <div class="bg-white p-2 w-[255px]">
+                <img
+                  src="image/react.svg"
+                  alt="React_logo"
+                  class="h-full ml-auto mr-auto"
+                />
+              </div>
+              <div class="ml-8 mt-2 mb-2 mr-8 font-nsjp">
+                フロントエンドの勉強の一環として、JavaScriptフレームワーク"React"の勉強を始めました！
+                <br />ハッカソンなどでチームメンバーが用意してくれた環境でReactを扱うことはありましたが、
+                <br />初めて自分で一からやってみるとより多くの知見が得られます。
+                <br />Next.jsを組み合わせた開発を一人でできるようになりたいです。
+              </div>
             </div>
             <div class="text-left">
               <h3 class="text-2xl font-nsjp font-medium">
@@ -229,13 +281,36 @@
               <p class="text-base font-nsjp font-normal mb-2">2024/5/18</p>
             </div>
             <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
-              <img src="image\tailwindcss-icon.svg" alt="React_logo" />
-              <div class="ml-auto">commingsoon...</div>
+              <div class="bg-white p-2 w-[255px]">
+                <img
+                  src="image\tailwindcss.svg"
+                  alt="Tailwind_logo"
+                  class="h-full"
+                />
+              </div>
+              <div class="ml-8 mt-2 mb-2 mr-8 font-nsjp">
+                最近、CSSのフレームワーク"TailwindCSS"を使ってスタイルを書いています。
+                <br />"ユーティリティクラス"というものを使ってHTMLに直接スタイルするのが特徴です。
+                <br />HTMLのクラスがとても長くなってしまうという難点はありますが、
+                <br />非常に迅速に複雑なスタイルを書くことができ、これなしではCSSを書きたくありません笑笑。
+                <br />このページもTailwindCSSを導入して作成しています。
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="text-center font-nsjp">©Sora Brog 2024 All rights reserved.</footer>
+    <footer class="text-center font-nsjp">
+      ©SoraBrog 2024 All rights reserved.
+    </footer>
   </body>
+  <script>
+    const options = {
+      contain: true,
+      heightRatio: 0.35,
+    };
+
+    const splide = new Splide(".splide", options);
+    splide.mount();
+  </script>
 </html>
