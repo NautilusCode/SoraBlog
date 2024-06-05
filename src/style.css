@@ -2,25 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 30vw 0px 10px;
+.slide-in {
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
-img {
-    width: 40px;
-    height: 40px;
+
+.slide-in.left {
+    transform: translateX(-100%);
 }
-footer {
-    text-align: center
+
+.slide-in.right {
+    transform: translateX(100%);
 }
-.myicon {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+
+.slide-in.show {
+    opacity: 1;
+    transform: translateX(0);
 }
-.reactlogo {
-    width: 120px;
-    height: 120px;
-} */

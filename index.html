@@ -20,9 +20,15 @@
         SoraBlog
       </h1>
       <div class="ml-auto mr-0 p-0 w-[24vw] flex justify-between">
-        <h2 class="text-3xl font-nsjp font-semibold text-white">Works</h2>
-        <h2 class="text-3xl font-nsjp font-semibold text-white">Contact</h2>
-        <h2 class="text-3xl font-nsjp font-semibold text-white">Blog</h2>
+        <button id="worksscrollButton">
+          <h2 class="text-3xl font-nsjp font-semibold text-white">Works</h2>
+        </button>
+        <button id="contactscrollButton">
+          <h2 class="text-3xl font-nsjp font-semibold text-white">Contact</h2>
+        </button>
+        <button id="blogscrollButton">
+          <h2 class="text-3xl font-nsjp font-semibold text-white">Blog</h2>
+        </button>
       </div>
     </header>
     <main>
@@ -30,7 +36,11 @@
         <div class="splide__track">
           <ul class="splide__list">
             <div class="relative mb-12 splide__slide">
-              <img src="src/image/Hero.png" alt="Hero" class="w-[60%] h-full object-cover" />
+              <img
+                src="src/image/Hero.png"
+                alt="Hero"
+                class="w-[60%] h-full object-cover"
+              />
               <h1
                 class="text-8xl absolute bottom-[15vw] left-auto right-24 font-nsjp font-semibold"
               >
@@ -65,235 +75,244 @@
           </ul>
         </div>
       </div>
-      <div class="mr-64 ml-64">
-        <div class="text-left">
-          <div class="bg-[#f6511d] h-4 w-[12vw] mb-2 mr-auto ml-0"></div>
-          <h2 class="text-6xl font-nsjp font-semibold">Profile</h2>
-          <h2 class="text-2xl font-nsjp font-semibold mb-10">自己紹介</h2>
-          <div
-            class="flex h-fit w-fit items-center border-[#f6511d] p-8 text-right mr-auto ml-0"
-          >
-            <img
-              src="src\image\icon.png"
-              alt="icon"
-              class="h-48 rounded-[50%] border-4 border-[#f6511d]"
-            />
-            <div class="ml-10">
-              <h3 class="font-nsjp font-semibold text-4xl mb-8 text-left">
-                Sora_339(西堀宙知)
-              </h3>
-              <p class="text-xl font-nsjp text-left">
-                青山学院大学社会情報学部2年生<br />青山情報メディアセンター勤務<br />PiedPiper青山テック愛好会会長<br />趣味で始めた動画編集でフリーランスとして活動中(2023.4～)<br />最近はWebのフロントエンドの技術を勉強中
-              </p>
+      <div class="">
+        <div class="mr-64 ml-64">
+          <div class="text-left">
+            <div class="bg-[#f6511d] h-4 w-[12vw] mb-2 mr-auto ml-0"></div>
+            <h2 class="text-6xl font-nsjp font-semibold">Profile</h2>
+            <h2 class="text-2xl font-nsjp font-semibold mb-10">自己紹介</h2>
+            <div
+              class="slide-in left flex h-fit w-fit items-center border-[#f6511d] p-8 text-right mr-auto ml-0"
+            >
+              <img
+                src="src\image\icon.png"
+                alt="icon"
+                class="h-48 rounded-[50%] border-4 border-[#f6511d]"
+              />
+              <div class="ml-10">
+                <h3 class="font-nsjp font-semibold text-4xl mb-8 text-left">
+                  Sora_339(西堀宙知)
+                </h3>
+                <p class="text-xl font-nsjp text-left">
+                  青山学院大学社会情報学部2年生<br />青山情報メディアセンター勤務<br />PiedPiper青山テック愛好会会長<br />趣味で始めた動画編集でフリーランスとして活動中(2023.4～)<br />最近はWebのフロントエンドの技術を勉強中
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="mr-64 ml-64">
-        <div class="text-right">
-          <div class="bg-[#ffb400] h-4 w-[12vw] mb-2 mr-0 ml-auto"></div>
-          <h2 class="text-6xl font-nsjp font-semibold">Works</h2>
-          <h2 class="text-2xl font-nsjp font-semibold mb-10">作品紹介</h2>
-          <div>
-            <div class="text-left">
-              <div class="mr-8">
-                <h3 class="font-nsjp font-semibold text-5xl">Movies</h3>
-                <h4 class="font-nsjp font-semibold text-xl">動画作品</h4>
-              </div>
-              <div
-                class="flex h-fit w-fit items-center border-[#f6511d] p-8 text-right mr-auto ml-0"
-              >
-                <div class="h-56 w-80">
-                  <video
-                    src="src\image\PiedPiperMV完成.mp4"
-                    class="h-full w-full"
-                    autoplay
-                    muted
-                    loop
-                  ></video>
-                </div>
-
-                <div class="ml-10">
-                  <p class="text-xl font-nsjp">
-                    私が所属するサークル<br />「PiedPiper青山テック愛好会」の文化祭用動画<br />2023年9月制作<br />モーショングラフィックスを用いて<br />疑似的な3D表現に挑戦
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div class="mr-64 ml-64">
+          <div class="text-right">
+            <div id="works" class="bg-[#ffb400] h-4 w-[12vw] mb-2 mr-0 ml-auto"></div>
+            <h2 class="text-6xl font-nsjp font-semibold">Works</h2>
+            <h2 class="text-2xl font-nsjp font-semibold mb-10">作品紹介</h2>
             <div>
-              <div class="mr-8">
-                <h3 class="font-nsjp font-semibold text-5xl">Web</h3>
-                <h4 class="font-nsjp font-semibold text-xl">ウェブ作品</h4>
-              </div>
-              <div
-                class="flex h-fit w-fit items-center border-[#f6511d] p-8 text-right mr-0 ml-auto"
-              >
-                <div class="h-56 w-80">
-                  <video
-                    src="src/image/2024-05-27 12-07-01.mp4"
-                    class="h-full w-full"
-                    autoplay
-                    muted
-                    loop
-                  ></video>
+              <div class="slide-in left text-left">
+                <div class="mr-8">
+                  <h3 class="font-nsjp font-semibold text-5xl">Movies</h3>
+                  <h4 class="font-nsjp font-semibold text-xl">動画作品</h4>
                 </div>
+                <div
+                  class="flex h-fit w-fit items-center border-[#f6511d] p-8 text-right mr-auto ml-0"
+                >
+                  <div class="h-56 w-80">
+                    <video
+                      src="src\image\PiedPiperMV完成.mp4"
+                      class="h-full w-full"
+                      autoplay
+                      muted
+                      loop
+                    ></video>
+                  </div>
+                  <div class="ml-10">
+                    <p class="text-xl font-nsjp">
+                      私が所属するサークル<br />「PiedPiper青山テック愛好会」の文化祭用動画<br />2023年9月制作<br />モーショングラフィックスを用いて<br />疑似的な3D表現に挑戦
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-in right">
+                <div class="mr-8">
+                  <h3 class="font-nsjp font-semibold text-5xl">Web</h3>
+                  <h4 class="font-nsjp font-semibold text-xl">ウェブ作品</h4>
+                </div>
+                <div
+                  class="flex h-fit w-fit items-center border-[#f6511d] p-8 text-right mr-0 ml-auto"
+                >
+                  <div class="h-56 w-80">
+                    <video
+                      src="src/image/2024-05-27 12-07-01.mp4"
+                      class="h-full w-full"
+                      autoplay
+                      muted
+                      loop
+                    ></video>
+                  </div>
 
-                <div class="ml-10">
-                  <p class="text-xl font-nsjp">
-                    スーパー巻き寿司職人<br />制限時間内に多くの巻き寿司を作るゲーム<br />1年次の授業でM氏と共同で開発<br />学部で優秀賞を獲得<br />GithubPagesでデプロイ<br /><a
-                      href="https://nautiluscode.github.io/MakizushiMaster/"
-                      >https://nautiluscode.github.io/MakizushiMaster/</a
-                    >
-                  </p>
+                  <div class="ml-10">
+                    <p class="text-xl font-nsjp">
+                      スーパー巻き寿司職人<br />制限時間内に多くの巻き寿司を作るゲーム<br />1年次の授業でM氏と共同で開発<br />学部で優秀賞を獲得<br />GithubPagesでデプロイ<br /><a
+                        href="https://sora339.github.io/MakizushiMaster/"
+                        >https://sora339.github.io/MakizushiMaster/</a
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="mr-64 ml-64">
-        <div class="text-left">
-          <div class="bg-[#00a6ed] h-4 w-[12vw] mb-2 mr-auto ml-0"></div>
-          <h2 class="text-6xl font-nsjp font-semibold">Contact</h2>
-          <h2 class="text-2xl font-nsjp font-semibold mb-10">SNS関係</h2>
-          <div class="flex h-fit w-fit items-center p-8 mr-auto ml-0">
-            <ul class="list-disc">
-              <div class="flex items-center mb-4">
-                <img
-                  src="src/image/google-gmail.svg"
-                  alt="Instagram_logo"
-                  class="h-12 w-12"
-                />
-                <li class="ml-10 text-2xl font-nsjp font-medium">
-                  Mail：
-                  <span class="text-xl"> xzhouzhi@gmail.com </span>
-                </li>
-              </div>
-              <div class="flex items-center mb-4">
-                <img src="src/image/X_logo.svg" alt="X_logo" class="h-12 w-12" />
-                <li class="ml-10 text-2xl font-nsjp font-medium">
-                  X：<a href="https://twitter.com/339_Sora" class="text-xl"
-                    >@339_Sora</a
-                  >
-                </li>
-              </div>
-              <div class="flex items-center mb-4">
-                <img
-                  src="src/image/Bluesky_Logo.svg"
-                  alt="Bluesky_logo"
-                  class="h-12 w-12"
-                />
-                <li class="ml-10 text-2xl font-nsjp font-medium">
-                  BlueSky：<a
-                    href="https://bsky.app/profile/sora339.bsky.social"
-                    class="text-xl"
-                    >@sora339.bsky.social</a
-                  >
-                </li>
-              </div>
-              <div class="flex items-center mb-4">
-                <img
-                  src="src/image/Instagram_logo_2022.svg"
-                  alt="Instagram_logo"
-                  class="h-12 w-12"
-                />
-                <li class="ml-10 text-2xl font-nsjp font-medium">
-                  Instagram：<a
-                    href="https://www.instagram.com/sorachi_339"
-                    class="text-xl"
-                    >sorachi_339</a
-                  >
-                </li>
-              </div>
-              <div class="flex items-center mb-4">
-                <img
-                  src="src/image/discord-icon.svg"
-                  alt="Bluesky_logo"
-                  class="h-12 w-12"
-                />
-                <li class="ml-10 text-2xl font-nsjp font-medium">
-                  discode：<a
-                    href="https://discord.com/users/692989109521612841"
-                    class="text-xl"
-                    >sora_339</a
-                  >
-                </li>
-              </div>
-              <div class="flex items-center mb-4">
-                <img
-                  src="src/image/github-icon.svg"
-                  alt="Bluesky_logo"
-                  class="h-12 w-12"
-                />
-                <li class="ml-10 text-2xl font-nsjp font-medium">
-                  Github：<a
-                    href="https://github.com/NautilusCode"
-                    class="text-xl"
-                    >NautilusCode</a
-                  >
-                </li>
-              </div>
-            </ul>
+        <div class="mr-64 ml-64">
+          <div class="text-left">
+            <div id="contact" class="bg-[#00a6ed] h-4 w-[12vw] mb-2 mr-auto ml-0"></div>
+            <h2 class="text-6xl font-nsjp font-semibold">Contact</h2>
+            <h2 class="text-2xl font-nsjp font-semibold mb-10">SNS関係</h2>
+            <div
+              class="slide-in left flex h-fit w-fit items-center p-8 mr-auto ml-0"
+            >
+              <ul class="list-disc">
+                <div class="flex items-center mb-4">
+                  <img
+                    src="src/image/google-gmail.svg"
+                    alt="Instagram_logo"
+                    class="h-12 w-12"
+                  />
+                  <li class="ml-10 text-2xl font-nsjp font-medium">
+                    Mail：
+                    <span class="text-xl"> xzhouzhi@gmail.com </span>
+                  </li>
+                </div>
+                <div class="flex items-center mb-4">
+                  <img
+                    src="src/image/X_logo.svg"
+                    alt="X_logo"
+                    class="h-12 w-12"
+                  />
+                  <li class="ml-10 text-2xl font-nsjp font-medium">
+                    X：<a href="https://twitter.com/339_Sora" class="text-xl"
+                      >@339_Sora</a
+                    >
+                  </li>
+                </div>
+                <div class="flex items-center mb-4">
+                  <img
+                    src="src/image/Bluesky_Logo.svg"
+                    alt="Bluesky_logo"
+                    class="h-12 w-12"
+                  />
+                  <li class="ml-10 text-2xl font-nsjp font-medium">
+                    BlueSky：<a
+                      href="https://bsky.app/profile/sora339.bsky.social"
+                      class="text-xl"
+                      >@sora339.bsky.social</a
+                    >
+                  </li>
+                </div>
+                <div class="flex items-center mb-4">
+                  <img
+                    src="src/image/Instagram_logo_2022.svg"
+                    alt="Instagram_logo"
+                    class="h-12 w-12"
+                  />
+                  <li class="ml-10 text-2xl font-nsjp font-medium">
+                    Instagram：<a
+                      href="https://www.instagram.com/sorachi_339"
+                      class="text-xl"
+                      >sorachi_339</a
+                    >
+                  </li>
+                </div>
+                <div class="flex items-center mb-4">
+                  <img
+                    src="src/image/discord-icon.svg"
+                    alt="Bluesky_logo"
+                    class="h-12 w-12"
+                  />
+                  <li class="ml-10 text-2xl font-nsjp font-medium">
+                    discode：<a
+                      href="https://discord.com/users/692989109521612841"
+                      class="text-xl"
+                      >sora_339</a
+                    >
+                  </li>
+                </div>
+                <div class="flex items-center mb-4">
+                  <img
+                    src="src/image/github-icon.svg"
+                    alt="Bluesky_logo"
+                    class="h-12 w-12"
+                  />
+                  <li class="ml-10 text-2xl font-nsjp font-medium">
+                    Github：<a
+                      href="https://github.com/Sora339"
+                      class="text-xl"
+                      >Sora339</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mr-64 ml-64">
-        <div class="text-center">
-          <div class="bg-[#7fb800] h-4 w-[12vw] mb-2 mr-auto ml-auto"></div>
-          <h2 class="text-6xl font-nsjp font-semibold">Blog</h2>
-          <h2 class="text-2xl font-nsjp font-semibold mb-10">呟き</h2>
-          <div
-            class="h-fit w-full items-center border-[#f6511d] p-8 text-right ml-0"
-          >
-            <div class="text-left">
-              <h3 class="text-2xl font-nsjp font-medium">普段の仕事紹介</h3>
-              <p class="text-base font-nsjp font-normal mb-2">2024/5/18</p>
-            </div>
-            <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
-              <div class="bg-white p-2 w-[255px]">
-                <!-- <img src="image\tailwindcss.svg" alt="Tailwind_logo" class="h-full"/> -->
-              </div>
-              <div class="ml-auto">commingsoon...</div>
-            </div>
-            <div class="text-left">
-              <h3 class="text-2xl font-nsjp font-medium">React勉強中!</h3>
-              <p class="text-base font-nsjp font-normal mb-2">2024/4/22</p>
-            </div>
-            <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
-              <div class="bg-white p-2 w-[255px]">
-                <img
-                  src="src/image/react.svg"
-                  alt="React_logo"
-                  class="h-full ml-auto mr-auto"
-                />
-              </div>
-              <div class="ml-8 mt-2 mb-2 mr-8 font-nsjp">
-                フロントエンドの勉強の一環として、JavaScriptフレームワーク"React"の勉強を始めました！
-                <br />ハッカソンなどでチームメンバーが用意してくれた環境でReactを扱うことはありましたが、
-                <br />初めて自分で一からやってみるとより多くの知見が得られます。
-                <br />Next.jsを組み合わせた開発を一人でできるようになりたいです。
-              </div>
-            </div>
-            <div class="text-left">
-              <h3 class="text-2xl font-nsjp font-medium">
-                TailwindCSSが最高すぎる
-              </h3>
-              <p class="text-base font-nsjp font-normal mb-2">2024/5/18</p>
-            </div>
-            <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
-              <div class="bg-white p-2 w-[255px]">
-                <img
-                  src="src/image/tailwindcss.svg"
-                  alt="Tailwind_logo"
-                  class="h-full"
-                />
-              </div>
-              <div class="ml-8 mt-2 mb-2 mr-8 font-nsjp">
-                最近、CSSのフレームワーク"TailwindCSS"を使ってスタイルを書いています。
-                <br />"ユーティリティクラス"というものを使ってHTMLに直接スタイルするのが特徴です。
-                <br />HTMLのクラスがとても長くなってしまうという難点はありますが、
-                <br />非常に迅速に複雑なスタイルを書くことができ、これなしではCSSを書きたくありません笑笑。
-                <br />このページもTailwindCSSを導入して作成しています。
+        <div class="h-[1000px]">
+          <div class="mr-64 ml-64">
+            <div class="text-center">
+              <div id="blog" class="bg-[#7fb800] h-4 w-[12vw] mb-2 mr-auto ml-auto"></div>
+              <h2 class="text-6xl font-nsjp font-semibold">Blog</h2>
+              <h2 class="text-2xl font-nsjp font-semibold mb-10">呟き</h2>
+              <div
+                class="h-fit w-full items-center border-[#f6511d] p-8 text-right ml-0"
+              >
+                <div class="text-left">
+                  <h3 class="text-2xl font-nsjp font-medium">普段の仕事紹介</h3>
+                  <p class="text-base font-nsjp font-normal mb-2">2024/5/18</p>
+                </div>
+                <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
+                  <div class="bg-white p-2 w-[255px]">
+                    <!-- <img src="image\tailwindcss.svg" alt="Tailwind_logo" class="h-full"/> -->
+                  </div>
+                  <div class="ml-auto">commingsoon...</div>
+                </div>
+                <div class="text-left">
+                  <h3 class="text-2xl font-nsjp font-medium">React勉強中!</h3>
+                  <p class="text-base font-nsjp font-normal mb-2">2024/4/22</p>
+                </div>
+                <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
+                  <div class="bg-white p-2 w-[255px]">
+                    <img
+                      src="src/image/react.svg"
+                      alt="React_logo"
+                      class="h-full ml-auto mr-auto"
+                    />
+                  </div>
+                  <div class="ml-8 mt-2 mb-2 mr-8 font-nsjp">
+                    フロントエンドの勉強の一環として、JavaScriptフレームワーク"React"の勉強を始めました！
+                    <br />ハッカソンなどでチームメンバーが用意してくれた環境でReactを扱うことはありましたが、
+                    <br />初めて自分で一からやってみるとより多くの知見が得られます。
+                    <br />Next.jsを組み合わせた開発を一人でできるようになりたいです。
+                  </div>
+                </div>
+                <div class="text-left">
+                  <h3 class="text-2xl font-nsjp font-medium">
+                    TailwindCSSが最高すぎる
+                  </h3>
+                  <p class="text-base font-nsjp font-normal mb-2">2024/5/18</p>
+                </div>
+                <div class="w-full h-48 bg-slate-200 text-left p-4 mb-6 flex">
+                  <div class="bg-white p-2 w-[255px]">
+                    <img
+                      src="src/image/tailwindcss.svg"
+                      alt="Tailwind_logo"
+                      class="h-full"
+                    />
+                  </div>
+                  <div class="ml-8 mt-2 mb-2 mr-8 font-nsjp">
+                    最近、CSSのフレームワーク"TailwindCSS"を使ってスタイルを書いています。
+                    <br />"ユーティリティクラス"というものを使ってHTMLに直接スタイルするのが特徴です。
+                    <br />HTMLのクラスがとても長くなってしまうという難点はありますが、
+                    <br />非常に迅速に複雑なスタイルを書くことができ、これなしではCSSを書きたくありません笑笑。
+                    <br />このページもTailwindCSSを導入して作成しています。
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -312,5 +331,47 @@
 
     const splide = new Splide(".splide", options);
     splide.mount();
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const slideInElements = document.querySelectorAll(".slide-in");
+      let hasScrolled = new Array(slideInElements.length).fill(false);
+
+      function checkSlide() {
+        slideInElements.forEach((element, index) => {
+          const slideInAt =
+            window.scrollY + window.innerHeight - element.clientHeight / 2;
+          const elementBottom = element.offsetTop + element.clientHeight;
+          const isHalfShown = slideInAt > element.offsetTop;
+          const isNotScrolledPast = window.scrollY < elementBottom;
+
+          if (isHalfShown && isNotScrolledPast && !hasScrolled[index]) {
+            element.classList.add("show");
+            hasScrolled[index] = true; // 一度表示されたらフラグを立てる
+          }
+        });
+      }
+
+      window.addEventListener("scroll", checkSlide);
+      checkSlide(); // ページ読み込み時に一度チェック
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const worksscrollButton = document.getElementById("worksscrollButton");
+      const works = document.getElementById("works");
+      const contactscrollButton = document.getElementById("contactscrollButton");
+      const contact = document.getElementById("contact");
+      const blogscrollButton = document.getElementById("blogscrollButton");
+      const blog = document.getElementById("blog");
+
+      worksscrollButton.addEventListener("click", function () {
+        works.scrollIntoView({ behavior: "smooth" });
+      });
+      contactscrollButton.addEventListener("click", function () {
+        contact.scrollIntoView({ behavior: "smooth" });
+      });
+      blogscrollButton.addEventListener("click", function () {
+        blog.scrollIntoView({ behavior: "smooth" });
+      });
+    });
   </script>
 </html>
